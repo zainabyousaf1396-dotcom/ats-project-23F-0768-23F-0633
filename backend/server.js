@@ -21,3 +21,4 @@ app.use('/api/branches', require('./routes/branch.routes'));
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });
+app.use('/api/upload', require('./routes/upload.routes'));
