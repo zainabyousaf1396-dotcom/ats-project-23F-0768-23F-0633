@@ -29,7 +29,7 @@ function JobDetails() {
     }
   };
 
-  if (!job) return <div style={{background:'#ffffff', minHeight:'100vh', display:'flex', justifyContent:'center', alignItems:'center', color:'#1e1e2e'}}>Loading...</div>;
+  if (!job) return <div style={{background:'#1e1e2e', minHeight:'100vh', display:'flex', justifyContent:'center', alignItems:'center', color:'white'}}>Loading...</div>;
 
   return (
     <div style={styles.container}>
@@ -86,16 +86,16 @@ function JobDetails() {
 const styles = {
   container: {
     minHeight: '100vh',
-    background: '#ffffff',
-    color: '#1e1e2e',
+    background: '#1e1e2e',
+    color: '#e2e8f0',
   },
   header: {
-    background: '#f9f9f9',
+    background: '#252538',
     padding: '16px 40px',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderBottom: '1px solid #e0e0e0',
+    borderBottom: '1px solid #3a3a52',
   },
   logo: {
     color: '#818cf8',
@@ -104,8 +104,8 @@ const styles = {
   },
   btnOutline: {
     background: 'transparent',
-    color: '#6366f1',
-    border: '1px solid #6366f1',
+    color: '#a5b4fc',
+    border: '1px solid #4a4a6a',
     padding: '9px 20px',
     borderRadius: '8px',
     cursor: 'pointer',
@@ -117,10 +117,10 @@ const styles = {
     padding: '0 20px',
   },
   card: {
-    background: '#f9f9f9',
+    background: '#252538',
     padding: '32px',
     borderRadius: '16px',
-    border: '1px solid #e0e0e0',
+    border: '1px solid #3a3a52',
   },
   cardTop: {
     display: 'flex',
@@ -129,14 +129,14 @@ const styles = {
     marginBottom: '16px',
   },
   jobTitle: {
-    color: '#000000',
+    color: '#ffffff',
     fontSize: '32px',
     fontWeight: '700',
     margin: 0,
   },
   badge: {
-    background: '#e8e8f0',
-    color: '#6366f1',
+    background: '#2e2e50',
+    color: '#818cf8',
     padding: '4px 12px',
     borderRadius: '99px',
     fontSize: '14px',
@@ -148,32 +148,32 @@ const styles = {
     marginBottom: '20px',
   },
   infoItem: {
-    color: '#666666',
+    color: '#94a3b8',
     fontSize: '16px',
   },
   description: {
-    color: '#333333',
+    color: '#cbd5e1',
     fontSize: '17px',
     lineHeight: '1.7',
     marginBottom: '28px',
-    borderTop: '1px solid #e0e0e0',
+    borderTop: '1px solid #3a3a52',
     paddingTop: '20px',
   },
   applySection: {
-    background: '#ffffff',
+    background: '#1e1e2e',
     padding: '24px',
     borderRadius: '12px',
-    border: '1px solid #e0e0e0',
+    border: '1px solid #3a3a52',
   },
   applyTitle: {
-    color: '#000000',
+    color: '#ffffff',
     fontSize: '20px',
     marginBottom: '16px',
   },
   fileInput: {
     display: 'block',
     marginBottom: '16px',
-    color: '#666666',
+    color: '#a5b4fc',
     fontSize: '16px',
   },
   applyBtn: {
@@ -191,7 +191,7 @@ const styles = {
     fontSize: '16px',
   },
   loginMsg: {
-    color: '#666666',
+    color: '#94a3b8',
     fontSize: '16px',
   },
   linkColor: {

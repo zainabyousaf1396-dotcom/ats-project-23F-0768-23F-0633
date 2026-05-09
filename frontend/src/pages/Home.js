@@ -49,7 +49,7 @@ function Home() {
           {jobs.map(job => (
             <div key={job._id} style={styles.card}
               onMouseEnter={e => e.currentTarget.style.borderColor = '#6366f1'}
-              onMouseLeave={e => e.currentTarget.style.borderColor = '#e0e0e0'}>
+              onMouseLeave={e => e.currentTarget.style.borderColor = '#2a2a3a'}>
               <div style={styles.cardTop}>
                 <h3 style={styles.jobTitle}>{job.title}</h3>
                 <span style={styles.badge}>{job.branch?.name}</span>
@@ -68,16 +68,16 @@ function Home() {
 const styles = {
   container: {
     minHeight: '100vh',
-    background: '#ffffff',
-    color: '#1e1e2e',
+    background: '#1e1e2e',
+    color: '#e2e8f0',
   },
   header: {
-    background: '#f9f9f9',
+    background: '#252538',
     padding: '16px 40px',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderBottom: '1px solid #e0e0e0',
+    borderBottom: '1px solid #3a3a52',
   },
   logo: {
     color: '#818cf8',
@@ -91,7 +91,7 @@ const styles = {
     gap: '12px',
   },
   welcome: {
-    color: '#6366f1',
+    color: '#a5b4fc',
     fontSize: '18px',
   },
   btnPrimary: {
@@ -106,8 +106,8 @@ const styles = {
   },
   btnOutline: {
     background: 'transparent',
-    color: '#6366f1',
-    border: '1px solid #6366f1',
+    color: '#a5b4fc',
+    border: '1px solid #4a4a6a',
     padding: '9px 20px',
     borderRadius: '8px',
     cursor: 'pointer',
@@ -116,19 +116,19 @@ const styles = {
   hero: {
     padding: '40px 40px',
     textAlign: 'center',
-    background: '#f5f5f5',
-    borderBottom: '1px solid #e0e0e0',
+    background: '#252538',
+    borderBottom: '1px solid #3a3a52',
   },
   heroTitle: {
     fontSize: '48px',
     fontWeight: '700',
-    color: '#000000',
+    color: '#ffffff',
     marginBottom: '14px',
     letterSpacing: '-0.5px',
   },
   heroSub: {
     fontSize: '18px',
-    color: '#666666',
+    color: '#a5b4fc',
   },
   content: {
     maxWidth: '1100px',
@@ -137,17 +137,17 @@ const styles = {
   },
   sectionTitle: {
     fontSize: '22px',
-    color: '#000000',
+    color: '#a5b4fc',
     marginBottom: '30px',
     fontWeight: '400',
     letterSpacing: '0.5px',
   },
   empty: {
-    background: '#f9f9f9',
+    background: '#252538',
     padding: '40px',
     borderRadius: '12px',
     textAlign: 'center',
-    color: '#666666',
+    color: '#a5b4fc',
   },
   grid: {
     display: 'grid',
@@ -155,10 +155,10 @@ const styles = {
     gap: '20px',
   },
   card: {
-    background: '#f9f9f9',
+    background: '#252538',
     padding: '24px',
     borderRadius: '12px',
-    border: '1px solid #e0e0e0',
+    border: '1px solid #3a3a52',
     transition: 'border-color 0.2s',
     cursor: 'default',
   },
@@ -169,14 +169,14 @@ const styles = {
     marginBottom: '10px',
   },
   jobTitle: {
-    color: '#000000',
+    color: '#ffffff',
     fontSize: '20px',
     fontWeight: '600',
     margin: 0,
   },
   badge: {
-    background: '#e8e8f0',
-    color: '#6366f1',
+    background: '#2e2e50',
+    color: '#818cf8',
     padding: '3px 10px',
     borderRadius: '99px',
     fontSize: '13px',
@@ -184,12 +184,12 @@ const styles = {
     whiteSpace: 'nowrap',
   },
   jobInfo: {
-    color: '#666666',
+    color: '#94a3b8',
     fontSize: '15px',
     marginBottom: '6px',
   },
   jobSeats: {
-    color: '#666666',
+    color: '#94a3b8',
     fontSize: '15px',
     marginBottom: '20px',
   },
