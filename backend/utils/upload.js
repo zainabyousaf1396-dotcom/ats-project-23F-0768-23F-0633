@@ -1,6 +1,6 @@
+const multer = require('multer');
 const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
-const multer = require('multer');
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -9,10 +9,11 @@ cloudinary.config({
 });
 
 const storage = new CloudinaryStorage({
-  cloudinary,
+  cloudinary: cloudinary,
   params: {
     folder: 'ats-uploads',
-    allowed_formats: ['pdf', 'docx', 'jpg', 'png'],
+    resource_type: 'raw',
+    public_id: (req, file) => `resume-${Date.now()}`,
   },
 });
 
