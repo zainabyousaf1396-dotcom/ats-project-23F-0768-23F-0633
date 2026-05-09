@@ -67,16 +67,16 @@ function CandidateDashboard() {
 const styles = {
   container: {
     minHeight: '100vh',
-    background: '#1e1e2e',
-    color: '#e2e8f0',
+    background: '#ffffff',
+    color: '#1e1e2e',
   },
   header: {
-    background: '#252538',
+    background: '#f9f9f9',
     padding: '16px 40px',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderBottom: '1px solid #3a3a52',
+    borderBottom: '1px solid #e0e0e0',
   },
   logo: {
     color: '#818cf8',
@@ -89,7 +89,7 @@ const styles = {
     gap: '12px',
   },
   welcome: {
-    color: '#a5b4fc',
+    color: '#6366f1',
     fontSize: '22px',
   },
   btnPrimary: {
@@ -104,8 +104,8 @@ const styles = {
   },
   btnOutline: {
     background: 'transparent',
-    color: '#a5b4fc',
-    border: '1px solid #4a4a6a',
+    color: '#6366f1',
+    border: '1px solid #6366f1',
     padding: '9px 20px',
     borderRadius: '8px',
     cursor: 'pointer',
@@ -117,23 +117,23 @@ const styles = {
     padding: '0 20px',
   },
   pageTitle: {
-    color: '#ffffff',
+    color: '#000000',
     fontSize: '32px',
     fontWeight: '700',
     marginBottom: '6px',
   },
   pageSubtitle: {
-    color: '#64748b',
+    color: '#666666',
     fontSize: '16px',
     marginBottom: '28px',
   },
   empty: {
-    background: '#252538',
+    background: '#f9f9f9',
     padding: '40px',
     borderRadius: '12px',
     textAlign: 'center',
-    color: '#64748b',
-    border: '1px solid #3a3a52',
+    color: '#666666',
+    border: '1px solid #e0e0e0',
   },
   grid: {
     display: 'grid',
@@ -141,10 +141,10 @@ const styles = {
     gap: '20px',
   },
   card: {
-    background: '#252538',
+    background: '#f9f9f9',
     padding: '24px',
     borderRadius: '12px',
-    border: '1px solid #3a3a52',
+    border: '1px solid #e0e0e0',
   },
   cardTop: {
     display: 'flex',
@@ -153,7 +153,7 @@ const styles = {
     marginBottom: '10px',
   },
   jobTitle: {
-    color: '#ffffff',
+    color: '#000000',
     fontSize: '20px',
     fontWeight: '600',
     margin: 0,
@@ -167,7 +167,7 @@ const styles = {
     background: 'transparent',
   },
   jobInfo: {
-    color: '#64748b',
+    color: '#666666',
     fontSize: '15px',
     marginBottom: '16px',
   },

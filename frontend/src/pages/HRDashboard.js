@@ -86,7 +86,7 @@ function HRDashboard() {
             {jobs.map(job => (
               <div key={job._id} style={{
                 ...styles.jobItem,
-                borderColor: selectedJob?._id === job._id ? '#6366f1' : '#3a3a52'
+                borderColor: selectedJob?._id === job._id ? '#6366f1' : '#e0e0e0'
               }}>
                 <div>
                   <p style={styles.jobName}>{job.title}</p>
@@ -140,16 +140,16 @@ function HRDashboard() {
 const styles = {
   container: {
     minHeight: '100vh',
-    background: '#1e1e2e',
-    color: '#e2e8f0',
+    background: '#ffffff',
+    color: '#1e1e2e',
   },
   header: {
-    background: '#252538',
+    background: '#f9f9f9',
     padding: '16px 40px',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderBottom: '1px solid #3a3a52',
+    borderBottom: '1px solid #e0e0e0',
   },
   logo: {
     color: '#818cf8',
@@ -162,7 +162,7 @@ const styles = {
     gap: '12px',
   },
   welcome: {
-    color: '#a5b4fc',
+    color: '#6366f1',
     fontSize: '18px',
   },
   btnPrimary: {
@@ -177,8 +177,8 @@ const styles = {
   },
   btnOutline: {
     background: 'transparent',
-    color: '#a5b4fc',
-    border: '1px solid #4a4a6a',
+    color: '#6366f1',
+    border: '1px solid #6366f1',
     padding: '9px 20px',
     borderRadius: '8px',
     cursor: 'pointer',
@@ -190,14 +190,14 @@ const styles = {
     padding: '0 20px',
   },
   card: {
-    background: '#252538',
+    background: '#f9f9f9',
     padding: '24px',
     borderRadius: '12px',
-    border: '1px solid #3a3a52',
+    border: '1px solid #e0e0e0',
     marginBottom: '20px',
   },
   cardTitle: {
-    color: '#ffffff',
+    color: '#000000',
     fontSize: '20px',
     fontWeight: '600',
     marginBottom: '16px',
@@ -212,9 +212,9 @@ const styles = {
     width: '100%',
     padding: '10px',
     borderRadius: '8px',
-    border: '1px solid #3a3a52',
-    background: '#1e1e2e',
-    color: '#e2e8f0',
+    border: '1px solid #e0e0e0',
+    background: '#ffffff',
+    color: '#1e1e2e',
     fontSize: '16px',
     boxSizing: 'border-box',
     outline: 'none',
@@ -232,16 +232,16 @@ const styles = {
     borderRadius: '8px',
     border: '1px solid',
     marginBottom: '10px',
-    background: '#1e1e2e',
+    background: '#ffffff',
   },
   jobName: {
-    color: '#ffffff',
+    color: '#000000',
     fontSize: '16px',
     fontWeight: '500',
     margin: 0,
   },
   jobMeta: {
-    color: '#64748b',
+    color: '#666666',
     fontSize: '14px',
     margin: '4px 0 0',
   },
@@ -255,10 +255,10 @@ const styles = {
     fontSize: '15px',
   },
   appItem: {
-    background: '#1e1e2e',
+    background: '#ffffff',
     padding: '16px',
     borderRadius: '10px',
-    border: '1px solid #3a3a52',
+    border: '1px solid #e0e0e0',
     marginBottom: '12px',
   },
   appTop: {
@@ -268,13 +268,13 @@ const styles = {
     marginBottom: '10px',
   },
   appName: {
-    color: '#ffffff',
+    color: '#000000',
     fontSize: '16px',
     fontWeight: '500',
     margin: 0,
   },
   appEmail: {
-    color: '#64748b',
+    color: '#666666',
     fontSize: '14px',
     margin: '3px 0 0',
   },
@@ -328,7 +328,7 @@ const styles = {
     fontSize: '14px',
   },
   empty: {
-    color: '#64748b',
+    color: '#666666',
     fontSize: '16px',
     textAlign: 'center',
     padding: '20px',
