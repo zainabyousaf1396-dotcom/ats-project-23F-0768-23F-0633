@@ -13,22 +13,41 @@ function App() {
   const { user } = useAuth();
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/jobs/:id" element={<JobDetails />} />
-        <Route
-          path="/candidate"
-          element={user?.role === 'candidate' ? <CandidateDashboard /> : <Navigate to="/login" />}
-        />
-        <Route
-          path="/hr"
-          element={user?.role === 'hr' ? <HRDashboard /> : <Navigate to="/login" />}
-        />
-      </Routes>
-    </Router>
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          
+          <Route path="/login" element={<Login />} />
+          
+          <Route path="/register" element={<Register />} />
+          
+          <Route path="/jobs/:id" element={<JobDetails />} />
+
+          <Route
+            path="/candidate"
+            element={
+              user?.role === 'candidate' ? (
+                <CandidateDashboard />
+              ) : (
+                <Navigate to="/login" />
+              )
+            }
+          />
+
+          <Route
+            path="/hr"
+            element={
+              user?.role === 'hr' ? (
+                <HRDashboard />
+              ) : (
+                <Navigate to="/login" />
+              )
+            }
+          />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
