@@ -6,7 +6,9 @@ const connectDB = require('./config/db');
 const app = express();
 connectDB();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://ats-project-23-f-0768-23-f-0633-ten.vercel.app'
+}));
 
 app.use(express.json());
 
